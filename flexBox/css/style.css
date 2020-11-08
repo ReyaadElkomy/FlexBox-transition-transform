@@ -1,0 +1,83 @@
+
+/* Start Task */
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #222;
+	height: 2000px;
+
+}
+
+.member{
+	width: 25%;
+	border: 2px solid #fff;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+
+.member img{
+	width: 100%;
+	transition: all 1s;
+	transition-delay: 1s;
+}
+
+.member .member-caption{
+	background-color: rgba(42, 63, 85, 0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: white;
+	transition-property: all;
+	transition-duration: 1s;
+	opacity: 0;
+}
+
+.member .member-caption h2{
+	background-color: #2A3F55;
+	margin: 0;
+	padding: 10px;
+	position: relative;
+	top: 0;
+	left: 100%;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-delay: 2s;
+}
+
+.member .member-caption p{
+	font-family: 'Itim', cursive;
+	font-weight: 100;
+	letter-spacing: 2px;
+	line-height: 22px;
+	padding: 20px;
+	position: relative;
+	top: 0;
+	left: 100%;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-delay: 3s;
+}
+.member:hover .member-caption p{
+	left: 0;
+}
+.member:hover .member-caption{
+	transform: rotate(360deg);
+	opacity: 1;
+}
+
+
+.member:hover img{
+	transform: scale(1.4);
+}
+
+.member:hover .member-caption h2{
+	left: 0;
+}
+
+/* End Task */
+
